@@ -1,0 +1,23 @@
+{
+  "name": "antlr-c3-maybe-bug-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-example1": "antlr4ng  -Dlanguage=TypeScript src/example1/*.g4  -no-listener -no-visitor -o src/example1/generated -Xexact-output-dir",
+    "generate-example2": "antlr4ng  -Dlanguage=TypeScript src/example2/*.g4  -no-listener -no-visitor -o src/example2/generated -Xexact-output-dir",
+    "generate": "npm run generate-example1 && npm run generate-example2"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "antlr4": "^4.13.2",
+    "antlr4-c3": "^3.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.6.3"
+  }
+}
